@@ -1,0 +1,10 @@
+version: '2.23.3'
+services:
+  node-app:
+    build: 
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src:ro
+    command: npm run start-dev 
+  
